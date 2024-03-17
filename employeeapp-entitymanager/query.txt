@@ -1,0 +1,33 @@
+ create table employee_table
+    ->  (id int not null primary key auto_increment,
+    ->    name varchar(100) not null,
+    ->    salary double not null
+    -> );
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> desc employee_table;
++--------+--------------+------+-----+---------+----------------+
+| Field  | Type         | Null | Key | Default | Extra          |
++--------+--------------+------+-----+---------+----------------+
+| id     | int          | NO   | PRI | NULL    | auto_increment |
+| name   | varchar(100) | NO   |     | NULL    |                |
+| salary | double       | NO   |     | NULL    |                |
++--------+--------------+------+-----+---------+----------------+
+3 rows in set (0.00 sec)
+
+mysql> insert into employee_table(name, salary) values('raj',500000);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into employee_table(name, salary) values('ravi',500000);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select * from employee_table;
++----+------+--------+
+| id | name | salary |
++----+------+--------+
+|  1 | raj  | 500000 |
+|  2 | ravi | 500000 |
++----+------+--------+
+2 rows in set (0.00 sec)
+
+mysql>

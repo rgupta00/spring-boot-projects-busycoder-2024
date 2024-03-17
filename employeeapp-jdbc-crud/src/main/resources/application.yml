@@ -1,0 +1,10 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: employeeapp
+  datasource:
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/busycoder

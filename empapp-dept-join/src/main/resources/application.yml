@@ -1,0 +1,16 @@
+server:
+  port: 8090
+spring:
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/busycoder1
+    username: root
+    password: root
+  application:
+    name: empapp-dept
+
